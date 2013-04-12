@@ -34,7 +34,11 @@ Visit the app at [http://localhost:5000/](http://localhost:5000/)
 
 # Heroku setup #
 
-Add the Heroku remote for deployment.
+Create a new Heroku app if necessary.
+
+    heroku apps:create YOURAPP
+
+Otherwise, add the Git remote of a prexisting app for deployment.
 
     heroku git:remote -a YOURAPP
 
