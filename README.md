@@ -27,3 +27,17 @@ Install dependencies.
 Start the app.
 
     foreman start
+
+# Set up Heroku #
+
+Add the Heroku remote for deployment.
+
+    heroku git:remote -a YOURAPP
+
+# Deploy to Heroku #
+
+Nothing special here.
+
+    git push heroku master
+
+Visit the app at [http://derp.herokuapp.com/](http://derp.herokuapp.com/)
