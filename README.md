@@ -44,4 +44,4 @@ Nothing special here.
 
     git push heroku master
 
-Visit the app at [http://derp.herokuapp.com/](http://derp.herokuapp.com/)
+Visit the app at http://YOURAPP.herokuapp.com/
