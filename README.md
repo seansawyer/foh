@@ -1,5 +1,7 @@
 # DERPG #
 
+## Local setup ##
+
 Install [virtualenvwrapper](http://virtualenvwrapper.readthedocs.org/en/latest/install.html).
 
 Install the [Heroku toolbelt](https://toolbelt.heroku.com/).
@@ -28,7 +30,9 @@ Start the app.
 
     foreman start
 
-# Set up Heroku #
+Visit the app at [http://localhost:5000/](http://localhost:5000/)
+
+# Heroku setup #
 
 Add the Heroku remote for deployment.
 
