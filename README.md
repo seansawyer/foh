@@ -1,4 +1,6 @@
-# DERPG #
+# FOH #
+
+Flask on Heroku - boilerplate for a simple Flask app.
 
 ## Reading ##
 
@@ -24,11 +26,11 @@ install the Foreman gem explicitly.
 
 Clone the repo.
 
-    git clone git@github.com:seansawyer/derpg.git && cd derpg
+    git clone git@github.com:seansawyer/foh.git && cd foh
 
 Make yourself a virtualenv.
 
-    mkvirtualenv --python=python2 derpg
+    mkvirtualenv --python=python2 foh
 
 Install dependencies.
 
@@ -39,12 +41,12 @@ loads settings from `derpg/settings/default.py` and then from
 `derpg/settings/development.py`. This isn't magic; you can read the
 code in `derpg/__init__.py`.
 
-If you want a custom enviroment, set the `DERPG_ENV` enviroment
+If you want a custom enviroment, set the `FOH_ENV` enviroment
 variable to the name of your environment and drop a new settings file
 in `derpg/settings`. So, say you added the following line to your
 `.bashrc`:
 
-    export DERPG_ENV=sean
+    export FOH_ENV=sean
 
 Then you would add `derpg/settings/sean.py` and set things there.
 

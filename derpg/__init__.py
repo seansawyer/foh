@@ -10,7 +10,7 @@ app = Flask(__name__)
 app.config.from_object('derpg.settings.default')
 
 # load environment-specific settings, default to development
-env = os.environ.get('DERPG_ENV', 'development')
+env = os.environ.get('FOH_ENV', 'development')
 env_settings = 'derpg.settings.' + env
 app.config.from_object(env_settings)
 
