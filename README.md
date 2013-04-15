@@ -1,5 +1,13 @@
 # DERPG #
 
+## Reading ##
+
+If you're new to Python or Flask, you should read these things.
+
+* [Official Python Tutorial](http://docs.python.org/2/tutorial/)
+* [Learn Python the Hard Way](http://learnpythonthehardway.org/book/)
+* [Flask Quickstart](http://flask.pocoo.org/docs/quickstart/)
+
 ## Local setup ##
 
 Install [virtualenvwrapper](http://virtualenvwrapper.readthedocs.org/en/latest/install.html).
@@ -25,6 +33,20 @@ Make yourself a virtualenv.
 Install dependencies.
 
     pip install -r requirements.txt
+
+By default, the application assumes you are running in development and
+loads settings from `derpg/settings/default.py` and then from
+`derpg/settings/development.py`. This isn't magic; you can read the
+code in `derpg/__init__.py`.
+
+If you want a custom enviroment, set the `DERPG_ENV` enviroment
+variable to the name of your environment and drop a new settings file
+in `derpg/settings`. So, say you added the following line to your
+`.bashrc`:
+
+    export DERPG_ENV=sean
+
+Then you would add `derpg/settings/sean.py` and set things there.
 
 Start the app.
 
