@@ -1,4 +1,6 @@
-from derpg import app
+"""UI routes"""
+
+from foh import app
 
 @app.route('/')
 def index():
